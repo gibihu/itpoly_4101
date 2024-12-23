@@ -1,6 +1,49 @@
 import React from "react";
 
-export default function Home({name, description, img}) {
+export default function Home() {
+    const people = [
+        {
+        name: 'MissMayulee Chailangka',
+        description: "นางสาวมยุลีย์ พงษ์บุพศิริกุล <br> หัวหน้าสาขางานเทคโนโลยีสารสนเทศ",
+        img: 'https://www.lannapoly.ac.th/online/Tea_picture/10402.jpg'
+        },
+        {
+        name: 'MissNutthakan Pirom',
+        description: "นางสาวณัฐกานต์ ภิรมณ์ <br> รองหัวหน้าสาขาวิชาเทคโนโลยีสารสนเทศ",
+        img: 'https://www.lannapoly.ac.th/online/Tea_picture/10439.jpg'
+        },
+        {
+        name: 'MissSawitta Pratoom',
+        description: "นางสาวสวิตตา ประทุม <br> ครูเทคโนโลยีสารสนเทศ",
+        img: 'https://www.lannapoly.ac.th/online/Tea_picture/10439.jpg'
+        },
+        {
+        name: 'MissThunyalak Kuntha',
+        description: "นางสาวธัญญลักษณ์ กันธะ <br> ครูเทคโนโลยีสารสนเทศ",
+        img: 'https://www.lannapoly.ac.th/online/Tea_picture/10421.jpg'
+        },
+        {
+        name: 'Mr.Paisan N.Lampang',
+        description: "นางสาวสวิตตา ประทุม <br> ครูเทคโนโลยีสารสนเทศ",
+        img: 'https://www.lannapoly.ac.th/online/Tea_picture/10439.jpg'
+        },
+    ];
+    return(
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 p-4">
+            {people.map((person) => (
+                <div className="col-span-1">
+                    <Card
+                        name={person.name}
+                        description={person.description}
+                        img={person.img}
+                    />
+                </div>
+            ))}
+        </div>
+    );
+}
+
+function Card({name, description, img}){
     return(
         <div className="flex items-start gap-4">
             <img
