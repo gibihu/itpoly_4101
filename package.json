@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/gibihu/itpoly_4101.git",
+  "homepage": "https://github.com/gibihu/itpoly_4101/",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
@@ -23,7 +23,7 @@
       "react-app",
       "react-app/jest"
     ]
-  },  
+  },
   "browserslist": {
     "production": [
       ">0.2%",
